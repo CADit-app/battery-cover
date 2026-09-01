@@ -1,0 +1,33 @@
+{
+  "name": "@cadit-app/battery-cover",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": {
+      "import": "./dist/*.js",
+      "types": "./dist/*.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "bash -c 'output=$(tsc --noCheck 2>&1); echo \"$output\"; echo \"$output\" | grep -v \"error TS2742\" | grep -q \"error TS\" && exit 1 || exit 0'",
+    "build:3mf": "manifold-cad index.ts output.3mf",
+    "build:glb": "manifold-cad index.ts output.glb"
+  },
+  "author": "cadit-user",
+  "license": "cc0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CADit-app/battery-cover"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

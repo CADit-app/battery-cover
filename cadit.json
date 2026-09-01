@@ -1,0 +1,19 @@
+{
+  "entryPoint": "index.ts",
+  "name": "Battery Cover",
+  "category": "mechanical",
+  "license": {
+    "type": "cc0"
+  },
+  "images": [
+    {
+      "path": "images/Life Preserver.webp",
+      "isPrimary": true
+    }
+  ],
+  "metadata": {
+    "createdAt": "2026-09-01T23:08:36.714Z",
+    "createdWith": "cadit-web",
+    "designId": "i8TTNtAm3nUm5sq"
+  }
+}
